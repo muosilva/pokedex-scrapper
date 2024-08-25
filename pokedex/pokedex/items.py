@@ -14,9 +14,5 @@ class PokedexItem(scrapy.Item):
     tipos = scrapy.Field()
     peso = scrapy.Field()
     altura = scrapy.Field()
-
-    # - Próximas evoluções do Pokémon se houver (Número, nome e URL)
-    # - Habilidades (link para outra página)
-    #     - URL da página
-    #     - Nome
-    #     - Descrição do efeito
+    evolucoes = scrapy.Field()
+    habilidades = scrapy.Field()
