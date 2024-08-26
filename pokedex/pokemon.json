@@ -1,26 +1,3 @@
 [
-  {
-    "numero": "0001",
-    "link": "https://www.pokemondb.net/pokedex/bulbasaur",
-    "nome": "Bulbasaur",
-    "tipos": ["Grass", "Poison"],
-    "altura": "0.7 m (2′04″)",
-    "peso": "6.9 kg (15.2 lbs)",
-    "evolucoes": [
-      { "numero": "#0002", "nome": "Ivysaur", "link": "/pokedex/ivysaur" },
-      { "numero": "#0003", "nome": "Venusaur", "link": "/pokedex/venusaur" }
-    ],
-    "habilidades": [
-      {
-        "nome": "Overgrow",
-        "link": "/ability/overgrow",
-        "descricao": "Powers up Grass-type moves in a pinch."
-      },
-      {
-        "nome": "Chlorophyll",
-        "link": "/ability/chlorophyll",
-        "descricao": "Boosts the Pokémon's Speed in sunshine."
-      }
-    ]
-  }
+{"numero": "0001", "link": "https://www.pokemondb.net/pokedex/bulbasaur", "nome": "Bulbasaur", "tipos": ["Grass", "Poison"], "altura": "0.7 m (2′04″)", "peso": "6.9 kg (15.2 lbs)", "evolucoes": [{"numero": "#0002", "nome": "Ivysaur", "link": "/pokedex/ivysaur"}, {"numero": "#0003", "nome": "Venusaur", "link": "/pokedex/venusaur"}], "habilidades": [{"nome": "Overgrow", "link": "/ability/overgrow", "descricao": "Powers up Grass-type moves in a pinch."}, {"nome": "Chlorophyll", "link": "/ability/chlorophyll", "descricao": "Boosts the Pokémon's Speed in sunshine."}]}
 ]
