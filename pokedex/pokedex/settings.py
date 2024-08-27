@@ -19,6 +19,8 @@ NEWSPIDER_MODULE = "pokedex.spiders"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+LOG_LEVEL = 'ERROR'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
