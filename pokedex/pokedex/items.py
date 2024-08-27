@@ -16,3 +16,7 @@ class PokedexItem(scrapy.Item):
     altura = scrapy.Field()
     evolucoes = scrapy.Field()
     habilidades = scrapy.Field()
+
+class EvolutionItem(scrapy.Item):
+    de = scrapy.Field()
+    para = scrapy.Field()
