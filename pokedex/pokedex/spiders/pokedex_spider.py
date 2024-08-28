@@ -106,6 +106,6 @@ class PokedexHabilidades(scrapy.Spider):
     def parse_method(self, response):
         item = response.meta['item']
         
-        item['descricao'] = ''.join(response.css('main > div.grid-row > div.grid-col > p ::text').getall())
+        item['descricao'] = ''.join(response.css('main > div.grid-row > div.grid-col > p ::text').getall()).replace("\n", "")
 
         yield item
