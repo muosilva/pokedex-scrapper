@@ -1,9 +1,11 @@
 import pandas as pd
 import re
 
+# Formatação id's
 def formatar_numero(numero):
     return str(numero).zfill(4)
 
+# Formatação altura e peso
 def converter_altura_peso(valor, tipo):
     match = re.search(r"([\d\.]+)", valor)
     if match:
@@ -13,11 +15,13 @@ def converter_altura_peso(valor, tipo):
         return valor_convertido
     return None
 
+# Buscando informações das habilidades pelo nome
 def obter_habilidades(nome_habilidades, habilidades_df):
     habilidades_info = habilidades_df[habilidades_df['nome'].isin(nome_habilidades)].to_dict(orient='records')
     return habilidades_info
 
-def unir_evolucoes():
+# Cria o JSON final cruzando as informações do Pokemon, Evoluções e Habilidades
+def unir_evolucoes_habilidades():
     poke_df = pd.read_json('pokemon.json', encoding='utf-8')
     evo_df = pd.read_json('pokemon_evo.json', encoding='utf-8')
     hab_df = pd.read_json('pokemon_hab.json', encoding='utf-8')
@@ -53,4 +57,4 @@ def unir_evolucoes():
 
     poke_df.to_json('poke_updated.json', orient='records', indent=4, force_ascii=False)
 
-unir_evolucoes()
+unir_evolucoes_habilidades()

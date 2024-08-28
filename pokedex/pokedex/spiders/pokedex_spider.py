@@ -4,6 +4,7 @@ from ..items import PokedexItem, EvolutionItem, HabilidadeItem
 #venv\Scripts\activate
 domain = "https://www.pokemondb.net"
 
+# Scraper pokemons
 class PokedexSpider(scrapy.Spider):
     name = "pokedex_spider"
     start_urls = ["https://pokemondb.net/pokedex/all"]
@@ -58,6 +59,7 @@ class PokedexSpider(scrapy.Spider):
         
         yield item
 
+# Scraper Evoluções
 class PokedexEvo(scrapy.Spider):
     name = "pokedex_evo"
     start_urls = ["https://pokemondb.net/evolution/"]
@@ -81,6 +83,7 @@ class PokedexEvo(scrapy.Spider):
 
             yield item
 
+# Scraper Habilidades
 class PokedexHabilidades(scrapy.Spider):
     name = "pokedex_hab"
     start_urls = ["https://pokemondb.net/ability"]
