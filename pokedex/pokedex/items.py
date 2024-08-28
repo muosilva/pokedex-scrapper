@@ -18,5 +18,10 @@ class PokedexItem(scrapy.Item):
     habilidades = scrapy.Field()
 
 class EvolutionItem(scrapy.Item):
-    de = scrapy.Field()
-    para = scrapy.Field()
+    pokemon_origem = scrapy.Field()
+    pokemon_destino = scrapy.Field()
+
+class HabilidadeItem(scrapy.Item):
+    nome = scrapy.Field()
+    link = scrapy.Field()
+    descricao = scrapy.Field()
