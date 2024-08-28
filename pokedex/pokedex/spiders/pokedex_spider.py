@@ -1,7 +1,6 @@
 import scrapy
 from ..items import PokedexItem, EvolutionItem, HabilidadeItem
 
-#venv\Scripts\activate
 domain = "https://www.pokemondb.net"
 
 # Scraper pokemons

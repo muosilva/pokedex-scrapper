@@ -55,6 +55,6 @@ def unir_evolucoes_habilidades():
 
     poke_df['habilidades'] = poke_df['habilidades'].apply(lambda x: obter_habilidades([h['nome'] for h in x], hab_df))
 
-    poke_df.to_json('poke_updated.json', orient='records', indent=4, force_ascii=False)
+    poke_df.to_json('pokedex.json', orient='records', indent=4, force_ascii=False)
 
 unir_evolucoes_habilidades()

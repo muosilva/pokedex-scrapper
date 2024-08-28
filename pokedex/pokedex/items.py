@@ -7,7 +7,6 @@ import scrapy
 
 
 class PokedexItem(scrapy.Item):
-    # define the fields for your item here like:
     numero = scrapy.Field()
     link = scrapy.Field()
     nome = scrapy.Field()
